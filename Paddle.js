@@ -1,4 +1,4 @@
-let SPEED = 0.02
+let SPEED = 0.005
 
 export default class Paddle {
   constructor(paddleElem) {
