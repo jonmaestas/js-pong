@@ -1,4 +1,4 @@
-const SPEED = 0.02
+let SPEED = 0.02
 
 export default class Paddle {
   constructor(paddleElem) {
@@ -22,6 +22,14 @@ export default class Paddle {
 
   reset() {
     this.position = 50
+  }
+
+  faster() {
+    SPEED *= 1.1
+  }
+
+  slower() {
+    SPEED *= 0.8
   }
 
   update(delta, ballHeight) {
