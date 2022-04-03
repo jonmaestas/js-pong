@@ -29,7 +29,7 @@ export default class Paddle {
   }
 
   slower() {
-    SPEED *= 0.8
+    SPEED *= 0.9
   }
 
   update(delta, ballHeight) {
