@@ -25,11 +25,11 @@ export default class Paddle {
   }
 
   faster() {
-    SPEED *= 1.1
+    SPEED *= 1.15
   }
 
   slower() {
-    SPEED *= 0.9
+    SPEED = Math.min(SPEED * 0.85, .00001)
   }
 
   update(delta, ballHeight) {
